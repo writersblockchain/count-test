@@ -3,8 +3,8 @@ use cosmwasm_std::{
 };
 
 use crate::{
-    msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg},
-    state::{Count, USER_COUNT},
+    msg::{CountResponse, ExecuteMsg, InstantiateMsg, QueryMsg, RandomResponse},
+    state::{Count, Random, USER_COUNT, USER_RANDOM},
 };
 
 #[entry_point]
@@ -26,6 +26,7 @@ pub fn execute(
 ) -> StdResult<Response> {
     match msg {
         ExecuteMsg::Increment {} => try_increment(deps, env),
+        ExecuteMsg::RequestRandom {} => try_request_random(deps, env),
     }
 }
 
@@ -45,14 +46,36 @@ pub fn try_increment(deps: DepsMut, _env: Env) -> StdResult<Response> {
     Ok(Response::default())
 }
 
+pub fn try_request_random(deps: DepsMut, env: Env) -> StdResult<Response> {
+    let random_u8 = env.block.random.unwrap().0[0];
+
+    let mut user_random = USER_RANDOM
+        .may_load(deps.storage)?
+        .unwrap_or(Random { random: random_u8 });
+
+    // Update user_random with the new random value
+    user_random.random = random_u8;
+
+    USER_RANDOM.save(deps.storage, &user_random)?;
+
+    deps.api.debug("randomness requested successfully");
+    Ok(Response::default())
+}
+
 #[entry_point]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
     match msg {
         QueryMsg::GetCount {} => to_binary(&query_count(deps)?),
+        QueryMsg::GetRandom {} => to_binary(&query_random(deps)?),
     }
 }
 
 fn query_count(deps: Deps) -> StdResult<CountResponse> {
     let count = USER_COUNT.load(deps.storage)?.count;
     Ok(CountResponse { count })
+}
+
+fn query_random(deps: Deps) -> StdResult<RandomResponse> {
+    let my_random = USER_RANDOM.load(deps.storage)?.random;
+    Ok(RandomResponse { random: my_random })
 }
