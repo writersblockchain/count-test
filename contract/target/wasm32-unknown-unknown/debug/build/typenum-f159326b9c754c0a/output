@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/sean_conrad/Desktop/count-test/contract/target/wasm32-unknown-unknown/debug/build/typenum-f159326b9c754c0a/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/sean_conrad/Desktop/count-test/contract/target/wasm32-unknown-unknown/debug/build/typenum-f159326b9c754c0a/out/op.rs
