@@ -1,0 +1,11 @@
+/Users/seanconrad/Desktop/count-test/contract/target/debug/deps/libsnafu-195f304a42d0dc99.rmeta: /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/lib.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/backtrace_impl_std.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/once_bool.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/error_chain.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/Snafu.md /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.md
+
+/Users/seanconrad/Desktop/count-test/contract/target/debug/deps/snafu-195f304a42d0dc99.d: /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/lib.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/backtrace_impl_std.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/once_bool.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/error_chain.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.rs /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/Snafu.md /Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.md
+
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/lib.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/backtrace_impl_std.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/once_bool.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/error_chain.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.rs:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/Snafu.md:
+/Users/seanconrad/.cargo/registry/src/index.crates.io-6f17d22bba15001f/snafu-0.8.2/src/report.md:

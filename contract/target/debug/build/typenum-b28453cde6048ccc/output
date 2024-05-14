@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=build/main.rs
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/seanconrad/Desktop/count-test/contract/target/debug/build/typenum-b28453cde6048ccc/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/seanconrad/Desktop/count-test/contract/target/debug/build/typenum-b28453cde6048ccc/out/op.rs
